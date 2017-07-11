@@ -1,0 +1,12 @@
+<br />
+<div class="booyah-box col-8 offset-2">
+<h1>New</h1>
+<%= simple_form_for @goal, url: goals_path do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <br />
+  <%= f.submit "Add goal", class: 'btn btn-primary' %>
+  <br />
+<% end %>
+</div>
+<br />

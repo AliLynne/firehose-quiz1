@@ -1,0 +1,16 @@
+<div class="booyah-box col-8 offset-2">
+<h1>Goals</h1>
+<ul>
+  <% @goals.each do |goal| %>
+
+    <li>
+      <%= goal.title %> - <%= goal.description %>
+    </li>
+
+  <% end %>
+</ul>
+
+
+<%= link_to 'Add new goal', new_goal_path, class: 'btn btn-primary' %>
+</div>
+<br />
